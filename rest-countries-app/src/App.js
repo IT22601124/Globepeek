@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/Favourites" element={<Favourites />} />
         <Route path="/country/:code" element={<CountryDetails />} />
