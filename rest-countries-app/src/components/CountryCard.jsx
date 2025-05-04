@@ -49,7 +49,7 @@ const CountryCard = ({ country }) => {
 
       if (isFavorite) {
         // Remove from favorites
-        const res = await fetch(`http://localhost:5000/api/favorites/${country.cca3}`, {
+        const res = await fetch(`hhttps://globepeek.azurewebsites.net/api/favorites/${country.cca3}`, {
           method: 'DELETE',
           headers: {
             Authorization: token, // Pass the token in the Authorization header
@@ -61,7 +61,7 @@ const CountryCard = ({ country }) => {
         console.log('Favorite removed successfully');
       } else {
         // Add to favorites
-        const res = await fetch('http://localhost:5000/api/favorites/add', {
+        const res = await fetch('https://globepeek.azurewebsites.net/api/favorites/add', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
