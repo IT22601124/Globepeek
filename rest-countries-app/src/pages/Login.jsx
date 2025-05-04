@@ -26,7 +26,7 @@ const Login = () => {
     setMessage('');
 
     try {
-      const res = await fetch('https://globepeekbackend.azurewebsites.net/api/login', {
+      const res = await fetch('https://globepeek.azurewebsites.net/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
