@@ -49,7 +49,7 @@ const CountryCard = ({ country }) => {
 
       if (isFavorite) {
         // Remove from favorites
-        const res = await fetch(`hhttps://globepeek.azurewebsites.net/api/favorites/${country.cca3}`, {
+        const res = await fetch(`https://globepeek.azurewebsites.net/api/favorites/${country.cca3}`, {
           method: 'DELETE',
           headers: {
             Authorization: token, // Pass the token in the Authorization header
