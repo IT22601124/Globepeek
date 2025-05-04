@@ -11,7 +11,7 @@ const authRoutes = require('./routes/auth');
 
 // ✅ Enable CORS
 app.use(cors({
-  origin: ['https://globepeekbackend.azurewebsites.net','http://localhost:3000'], // React app URL
+  origin: ['https://delicate-croquembouche-68b7c6.netlify.app','http://localhost:3000'], // React app URL
   credentials: true
 }));
 
