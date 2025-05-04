@@ -30,7 +30,7 @@ const Register = () => {
 
       setMessage('✅ Registered successfully!');
       setFormData({ email: '', password: '' });
-      setTimeout(() => navigate('/login'), 1000); // Redirect to login after successful registration
+      setTimeout(() => navigate('/'), 1000); // Redirect to login after successful registration
     } catch (err) {
       setMessage(`❌ ${err.message}`);
     } finally {
