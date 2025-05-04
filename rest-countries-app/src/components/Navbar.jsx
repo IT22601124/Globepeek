@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="space-x-6 text-lg font-medium">
         <a href="/dashboard" className="text-gray-700 hover:text-blue-500 transition">Home</a>
         <a href="/favourites" className="text-gray-700 hover:text-blue-500 transition">Favorites</a>
-        <a href="/login" className="text-gray-700 hover:text-blue-500 transition">Login</a>
+        {/* <a href="/login" className="text-gray-700 hover:text-blue-500 transition">Login</a> */}
         <button
           onClick={handleLogout}
           className="text-gray-700 hover:text-red-500 transition"
