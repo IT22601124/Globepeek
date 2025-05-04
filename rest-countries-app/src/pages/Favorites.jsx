@@ -22,7 +22,7 @@ const Favourites = () => {
       setLoading(true); // Start loading
       try {
         const token = localStorage.getItem('token'); // Get the token from localStorage
-        const res = await fetch('http://localhost:5000/api/favorites', {
+        const res = await fetch('https://globepeekbackend.azurewebsites.net/api/favorites', {
           method: 'GET',
           headers: {
             Authorization: token, // Pass the token in the Authorization header
